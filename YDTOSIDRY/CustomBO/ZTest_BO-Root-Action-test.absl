@@ -31,5 +31,10 @@ foreach (var res in this)
 		res.cust = resultData;
 	}
 
+<<<<<<< HEAD
 	var appele = "I am commiting the code in my folder One more James is back.";
+=======
+	var appele = "I am commiting the code in my folder One more";
+	var Banana = "I am commiting the code in my folder One more";
+>>>>>>> 358e3d37e0c448821ed2780411283c04728a3945
 }
