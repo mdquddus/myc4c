@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="C4CCommonServices_Out"
+                  targetNamespace="http://sec.se.com.sa/Billing/C4C"
+                  xmlns:p1="http://sec.se.com.sa/Billing/C4C"
+                  xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+                  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+	<wsdl:documentation/>
+	<wsp:UsingPolicy wsdl:required="true"/>
+	<wsp:Policy wsu:Id="OP_GetRegisterDetails"/>
+	<wsp:Policy wsu:Id="OP_GetAccountDetails"/>
+	<wsp:Policy wsu:Id="OP_GetCCNEDetails"/>
+	<wsp:Policy wsu:Id="OP_GetContractDetails"/>
+	<wsp:Policy wsu:Id="OP_GetInstallationDetails"/>
+	<wsp:Policy wsu:Id="OP_GetDataModelDetails"/>
+	<wsp:Policy wsu:Id="OP_GetMCCCAccounts"/>
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://sec.se.com.sa/Billing/C4C"
+		            xmlns="http://sec.se.com.sa/Billing/C4C"
+		            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:element name="C4CGetContractDetailsRequest"
+			             type="C4CGetContractDetailsRequest"/>
+			<xsd:element name="C4CGetCCNEDetailsRequest"
+			             type="C4CGetCCNEDetailsRequest"/>
+			<xsd:element name="C4CGetInstallationDetailsRequest"
+			             type="C4CGetInstallationDetailsRequest"/>
+			<xsd:element name="C4CGetDataModelDetailsResponse"
+			             type="C4CGetDataModelDetailsResponse"/>
+			<xsd:element name="C4CGetAccountDetailsResponse"
+			             type="C4CGetAccountDetailsResponse"/>
+			<xsd:element name="C4CGetInstallationDetailsResponse"
+			             type="C4CGetInstallationDetailsResponse"/>
+			<xsd:element name="C4CGetMCCCAccountsResponse"
+			             type="C4CGetMCCCAccountsResponse"/>
+			<xsd:element name="C4CGetContractDetailsResponse"
+			             type="C4CGetContractDetailsResponse"/>
+			<xsd:element name="C4CGetRegisterDetailsRequest"
+			             type="C4CGetRegisterDetailsRequest"/>
+			<xsd:element name="C4CGetRegisterDetailsResponse"
+			             type="C4CGetRegisterDetailsResponse"/>
+			<xsd:element name="C4CGetMCCCAccountsRequest"
+			             type="C4CGetMCCCAccountsRequest"/>
+			<xsd:element name="C4CGetAccountDetailsRequest"
+			             type="C4CGetAccountDetailsRequest"/>
+			<xsd:element name="C4CGetCCNEDetailsResponse"
+			             type="C4CGetCCNEDetailsResponse"/>
+			<xsd:element name="C4CGetDataModelDetailsRequest"
+			             type="C4CGetDataModelDetailsRequest"/>
+			<xsd:complexType name="Result">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="EN">Result</xsd:documentation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">f752b757588811ebbf4400000054fae2</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="MessageFlag">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">251db61b4cec11e3836990004e777875</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:integer">
+								<xsd:totalDigits value="1"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="MessageTextArabic"
+					             type="xsd:string"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">251db61c4cec11e3909890004e777875</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="MessageTextEnglish"
+					             type="xsd:string"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">251db61d4cec11e395f590004e777875</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetContractDetailsRequest">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">05131bd5c2bb11ebacd5000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="ContractAccount">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">4c319094bef411eb8d8a00059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="([0-9])*"/>
+								<xsd:length value="11"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetCCNEDetailsRequest">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">cc0c3b6abef311eb88de000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="Contract">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">cb45a2e8bef311ebb25b00059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="([0-9])*"/>
+								<xsd:length value="10"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetAccountDetailsRequest">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">66f5788a1d0b11eda202000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="ContractAccount"
+					             type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetInstallationDetailsRequest">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">f2770c17bef311ebb48d000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="Installation">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">f1b3ffbbbef311ebc46100059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="([0-9])*"/>
+								<xsd:length value="10"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetDataModelDetailsResponse">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">852a6ce2e22711eb9ea8000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="DataModelDetails"
+					             minOccurs="0"
+					             maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">a8073b5e597611eb80e3d4c9eff180b5</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="ContractAccount"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">85172d1ce22711eb9e8800059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="Premise"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b56597611ebb4ead4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="Installation"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b57597611eb8b78d4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="MainPremise"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b58597611eb81d2d4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="HigherLevelMainPremise"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b59597611ebb7f7d4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="PrimaryPremise"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b5a597611eb8fd4d4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="MainSubType"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b5b597611ebb4add4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="MeterDataSetup"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b5c597611eb8a92d4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:simpleContent>
+											<xsd:extension base="xsd:string">
+												<xsd:attribute name="Code"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">e0b494abe22711eb906f00059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+											</xsd:extension>
+										</xsd:simpleContent>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="BillingDataSetup"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">a8073b5d597611eba102d4c9eff180b5</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:simpleContent>
+											<xsd:extension base="xsd:string">
+												<xsd:attribute name="Code"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">e0b494ace22711ebcd2e00059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+											</xsd:extension>
+										</xsd:simpleContent>
+									</xsd:complexType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Result"
+					             type="Result">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">a8073b5f597611eba4e4d4c9eff180b5</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetAccountDetailsResponse">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">459e88bc216311ed9a65000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="AccountDetails">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">4588b1fa216311edbf9100059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="BusinessPartner">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e5216311ed8fb400059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:simpleContent>
+											<xsd:extension base="xsd:string">
+												<xsd:attribute name="BPCategory"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e2216311ed8c2000059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+												<xsd:attribute name="BPType"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e3216311eda79500059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+												<xsd:attribute name="CCStatus"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e4216311ed908900059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+											</xsd:extension>
+										</xsd:simpleContent>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="ContractAccount">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">38e1357e17bb11edb96700059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:simpleContent>
+											<xsd:extension base="xsd:string">
+												<xsd:attribute name="MCContractAccount"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">38e1357d17bb11edb64300059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+											</xsd:extension>
+										</xsd:simpleContent>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="BeneficiaryInformation"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">38e10e7117bb11ed9d9000059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:sequence>
+											<xsd:element name="BusinessPartner">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e9216311eda53e00059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+												<xsd:complexType>
+													<xsd:simpleContent>
+														<xsd:extension base="xsd:string">
+															<xsd:attribute name="BPCategory"
+															               type="xsd:string">
+																<xsd:annotation>
+																	<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e6216311edb82500059a3c7a00</xsd:appinfo>
+																</xsd:annotation>
+															</xsd:attribute>
+															<xsd:attribute name="BPType"
+															               type="xsd:string">
+																<xsd:annotation>
+																	<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e7216311edba2200059a3c7a00</xsd:appinfo>
+																</xsd:annotation>
+															</xsd:attribute>
+															<xsd:attribute name="CCStatus"
+															               type="xsd:string">
+																<xsd:annotation>
+																	<xsd:appinfo source="http://sap.com/xi/TextID">4588b1e8216311ed91fb00059a3c7a00</xsd:appinfo>
+																</xsd:annotation>
+															</xsd:attribute>
+														</xsd:extension>
+													</xsd:simpleContent>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="ContractAccount"
+											             type="xsd:string">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">38e1357f17bb11edbd1e00059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="BusinessPartnerName"
+											             type="xsd:string">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">38e10e7017bb11eda8cf00059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+										</xsd:sequence>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="OwnerInformation"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">38e10e7417bb11edcc5600059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:sequence>
+											<xsd:element name="BusinessPartner">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">4588b1ed216311edc04b00059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+												<xsd:complexType>
+													<xsd:simpleContent>
+														<xsd:extension base="xsd:string">
+															<xsd:attribute name="BPCategory"
+															               type="xsd:string">
+																<xsd:annotation>
+																	<xsd:appinfo source="http://sap.com/xi/TextID">4588b1ea216311ed890a00059a3c7a00</xsd:appinfo>
+																</xsd:annotation>
+															</xsd:attribute>
+															<xsd:attribute name="BPType"
+															               type="xsd:string">
+																<xsd:annotation>
+																	<xsd:appinfo source="http://sap.com/xi/TextID">4588b1eb216311edb46400059a3c7a00</xsd:appinfo>
+																</xsd:annotation>
+															</xsd:attribute>
+															<xsd:attribute name="CCStatus"
+															               type="xsd:string">
+																<xsd:annotation>
+																	<xsd:appinfo source="http://sap.com/xi/TextID">4588b1ec216311eda61900059a3c7a00</xsd:appinfo>
+																</xsd:annotation>
+															</xsd:attribute>
+														</xsd:extension>
+													</xsd:simpleContent>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="ContractAccount"
+											             type="xsd:string">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">38e10e7217bb11ed944800059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="BusinessPartnerName"
+											             type="xsd:string">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">38e10e7317bb11ed984500059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+										</xsd:sequence>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="PremiseNumber"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1ee216311edb44600059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="InstallationNumber"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1ef216311ed868a00059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="SubscriptionNumber"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f0216311edb1a000059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="MeterNumber"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f1216311ed8d0100059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="TransmissionIndicator"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f2216311ed858d00059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="VoltageLevel"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f3216311edbff400059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="Converted"
+								             type="xsd:string"/>
+								<xsd:element name="BillingDataSetup">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f5216311ed89fb00059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:simpleContent>
+											<xsd:extension base="xsd:string">
+												<xsd:attribute name="Code"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f4216311edc4d300059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+											</xsd:extension>
+										</xsd:simpleContent>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="MeterDataSetup">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f7216311edcffe00059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:simpleContent>
+											<xsd:extension base="xsd:string">
+												<xsd:attribute name="Code"
+												               type="xsd:string">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f6216311edb03200059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+											</xsd:extension>
+										</xsd:simpleContent>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="ContractStatus"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f8216311edad2d00059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="EligibleforReconnection"
+								             type="xsd:string">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">4588b1f9216311edc37500059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Result"
+					             type="Result">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">3db4ed323aed11e8a5f700ff3013beb8</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetInstallationDetailsResponse">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">ba0f44bd588911eb82c700000054fae2</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="InstallationDetails"
+					             minOccurs="0">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="Installation"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="InstallationDetail"
+								             minOccurs="0"
+								             maxOccurs="unbounded">
+									<xsd:complexType>
+										<xsd:sequence>
+											<xsd:element name="ValidFrom"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="ValidTo"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="RateCategory"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="Industry"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="BillingClass"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="MeterReadingUnit"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="PrimaryInstallation"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="InstallationRole"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="GroupingType"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="HigherLevelInstallation"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="EquipmentID"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="FunctionallD"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="SubscriptionNumber"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="RouteReferenceNumber"
+											             type="xsd:string"
+											             minOccurs="0"/>
+										</xsd:sequence>
+									</xsd:complexType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Result"
+					             type="Result"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetMCCCAccountsRequest">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">373e012cbef411eb9abc000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="BusinessPartner"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">367c3667bef411ebb60800059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="([0-9])*"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="ContractAccount"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">367c3668bef411eb815c00059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="([0-9])*"/>
+								<xsd:length value="11"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetContractDetailsResponse">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">236e4ea8bebf11ebbce8000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="ContractDetails"
+					             minOccurs="0">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="Contract"
+								             type="xsd:string"/>
+								<xsd:element name="ContractStartDate"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="ContractText"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="BalanceForwardDebit"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="BalanceForwardCredit"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="BillingBlockReason"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="AccountDeterminationID"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="BusinessArea"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="BusinessPlace"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="ContractClass"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="Segment"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="OwnersBeneficiaryStatus"
+								             type="xsd:string"
+								             minOccurs="0"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Result"
+					             type="Result"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetMCCCAccountsResponse">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">d16a0cf3bba411ebcc12000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="BusinessPartnerDetails"
+					             minOccurs="0"
+					             maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">bf067032bba311eb85f900059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="BusinessPartner"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">bf067030bba311eb82bd00059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:simpleContent>
+											<xsd:extension base="xsd:string">
+												<xsd:attribute name="CCIndicator"
+												               type="xsd:string"
+												               use="required">
+													<xsd:annotation>
+														<xsd:appinfo source="http://sap.com/xi/TextID">bf06702fbba311ebb11900059a3c7a00</xsd:appinfo>
+													</xsd:annotation>
+												</xsd:attribute>
+											</xsd:extension>
+										</xsd:simpleContent>
+									</xsd:complexType>
+								</xsd:element>
+								<xsd:element name="ContractAccount"
+								             type="xsd:string"
+								             minOccurs="0"
+								             maxOccurs="unbounded">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">bf067031bba311eba6c600059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Result"
+					             type="Result">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">bf067033bba311eba2a500059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetRegisterDetailsResponse">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">13c28666bdeb11ebad67000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="RegisterDetails"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">7c073cbe565c11ebc24300059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="EquipmentNumber"
+								             type="xsd:string"
+								             minOccurs="0">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">7c071911565c11ebc08800059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+								</xsd:element>
+								<xsd:element name="DeviceSerialNumber"
+								             type="xsd:string"
+								             minOccurs="0"/>
+								<xsd:element name="RegisterDetail"
+								             minOccurs="0"
+								             maxOccurs="unbounded">
+									<xsd:annotation>
+										<xsd:appinfo source="http://sap.com/xi/TextID">7c073cbd565c11ebabd000059a3c7a00</xsd:appinfo>
+									</xsd:annotation>
+									<xsd:complexType>
+										<xsd:sequence>
+											<xsd:element name="RegisterNumber"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c071912565c11eb904c00059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="RegisterType"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c071913565c11eb9d6e00059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="RateType"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c071914565c11ebca9700059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="BillingRelevantFlag"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cb5565c11ebc5b300059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="PreDecimal"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cb6565c11eb8f9500059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="PostDecimal"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cb7565c11ebb35300059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="RegisterFactor"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cb8565c11eb9b0400059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="UnitOfMeasurement"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cb9565c11eba7a200059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="NoMeterRead"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cba565c11eba33c00059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="PeriodicConsumption"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cbb565c11eb80b100059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+											<xsd:element name="NoOfDays"
+											             type="xsd:string"
+											             minOccurs="0">
+												<xsd:annotation>
+													<xsd:appinfo source="http://sap.com/xi/TextID">7c073cbc565c11ebc7e900059a3c7a00</xsd:appinfo>
+												</xsd:annotation>
+											</xsd:element>
+										</xsd:sequence>
+									</xsd:complexType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Result"
+					             type="Result">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">7c073cbf565c11eba0f600059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetRegisterDetailsRequest">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">af0bd0fcbe1711eb93df000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="DeviceCategory"
+					             type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">ae8ab455be1711eb85fc00059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="DeviceSerialNumber"
+					             type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">ae8ab456be1711eb876b00059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetDataModelDetailsRequest">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">1b93518cbef411ebbc49000000831922</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="ContractAccount"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">5188db32bbad11ebc82f00059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="([0-9])*"/>
+								<xsd:length value="11"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="Premise"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">ae20eaf374dd11ebc99c00059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="([0-9])*"/>
+								<xsd:length value="10"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="Language"
+					             type="xsd:string"
+					             minOccurs="0">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">1ad05297bef411ebbc0000059a3c7a00</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="C4CGetCCNEDetailsResponse">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">3c0facdb588b11eb9f4c00000054fae2</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="CCNEDetails"
+					             minOccurs="0">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="CCNEDetail"
+								             minOccurs="0"
+								             maxOccurs="unbounded">
+									<xsd:complexType>
+										<xsd:sequence>
+											<xsd:element name="BusinessPartner"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="ContractAccount"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="IDNumber"
+											             minOccurs="0">
+												<xsd:complexType>
+													<xsd:simpleContent>
+														<xsd:extension base="xsd:string">
+															<xsd:attribute name="IDType"
+															               type="xsd:string"/>
+														</xsd:extension>
+													</xsd:simpleContent>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="Contract"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="SerialNumber"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="Status"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="StartDate"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="ExpiryDate"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="RenewalDate"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="CancellationDate"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="UpdationDate"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="NameofPerson"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="PhoneNumber"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="HospitalName"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="CertificateNumber"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="CertificateIssueDate"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="PatientPhoneNumber"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="RelationshipType"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="RelationshipTenant"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="RelationshipOwner"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="VisitoHandicap"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="NameOfVisitor"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="VisitorIDNumber"
+											             minOccurs="0">
+												<xsd:complexType>
+													<xsd:simpleContent>
+														<xsd:extension base="xsd:string">
+															<xsd:attribute name="IDType"
+															               type="xsd:string"/>
+														</xsd:extension>
+													</xsd:simpleContent>
+												</xsd:complexType>
+											</xsd:element>
+											<xsd:element name="BusinessPlace"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="CreatedBy"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="CreatedOn"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="CreatedTime"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="ChangedBy"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="ChangedOn"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="ChangedTime"
+											             type="xsd:string"
+											             minOccurs="0"/>
+											<xsd:element name="ActionPerformed"
+											             type="xsd:string"
+											             minOccurs="0"/>
+										</xsd:sequence>
+									</xsd:complexType>
+								</xsd:element>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="Result"
+					             type="Result"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="C4CGetRegisterDetailsRequest">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetRegisterDetailsRequest"
+		           element="p1:C4CGetRegisterDetailsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetRegisterDetailsResponse">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetRegisterDetailsResponse"
+		           element="p1:C4CGetRegisterDetailsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetAccountDetailsRequest">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetAccountDetailsRequest"
+		           element="p1:C4CGetAccountDetailsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetAccountDetailsResponse">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetAccountDetailsResponse"
+		           element="p1:C4CGetAccountDetailsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetCCNEDetailsRequest">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetCCNEDetailsRequest"
+		           element="p1:C4CGetCCNEDetailsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetCCNEDetailsResponse">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetCCNEDetailsResponse"
+		           element="p1:C4CGetCCNEDetailsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetContractDetailsRequest">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetContractDetailsRequest"
+		           element="p1:C4CGetContractDetailsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetContractDetailsResponse">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetContractDetailsResponse"
+		           element="p1:C4CGetContractDetailsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetInstallationDetailsRequest">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetInstallationDetailsRequest"
+		           element="p1:C4CGetInstallationDetailsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetInstallationDetailsResponse">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetInstallationDetailsResponse"
+		           element="p1:C4CGetInstallationDetailsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetDataModelDetailsRequest">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetDataModelDetailsRequest"
+		           element="p1:C4CGetDataModelDetailsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetDataModelDetailsResponse">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetDataModelDetailsResponse"
+		           element="p1:C4CGetDataModelDetailsResponse"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetMCCCAccountsRequest">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetMCCCAccountsRequest"
+		           element="p1:C4CGetMCCCAccountsRequest"/>
+	</wsdl:message>
+	<wsdl:message name="C4CGetMCCCAccountsResponse">
+		<wsdl:documentation/>
+		<wsdl:part name="C4CGetMCCCAccountsResponse"
+		           element="p1:C4CGetMCCCAccountsResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="C4CCommonServices_Out">
+		<wsdl:documentation/>
+		<wsdl:operation name="GetRegisterDetails">
+			<wsdl:documentation/>
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_GetRegisterDetails"/>
+			</wsp:Policy>
+			<wsdl:input message="p1:C4CGetRegisterDetailsRequest"/>
+			<wsdl:output message="p1:C4CGetRegisterDetailsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetAccountDetails">
+			<wsdl:documentation/>
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_GetAccountDetails"/>
+			</wsp:Policy>
+			<wsdl:input message="p1:C4CGetAccountDetailsRequest"/>
+			<wsdl:output message="p1:C4CGetAccountDetailsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetCCNEDetails">
+			<wsdl:documentation/>
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_GetCCNEDetails"/>
+			</wsp:Policy>
+			<wsdl:input message="p1:C4CGetCCNEDetailsRequest"/>
+			<wsdl:output message="p1:C4CGetCCNEDetailsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetContractDetails">
+			<wsdl:documentation/>
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_GetContractDetails"/>
+			</wsp:Policy>
+			<wsdl:input message="p1:C4CGetContractDetailsRequest"/>
+			<wsdl:output message="p1:C4CGetContractDetailsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetInstallationDetails">
+			<wsdl:documentation/>
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_GetInstallationDetails"/>
+			</wsp:Policy>
+			<wsdl:input message="p1:C4CGetInstallationDetailsRequest"/>
+			<wsdl:output message="p1:C4CGetInstallationDetailsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetDataModelDetails">
+			<wsdl:documentation/>
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_GetDataModelDetails"/>
+			</wsp:Policy>
+			<wsdl:input message="p1:C4CGetDataModelDetailsRequest"/>
+			<wsdl:output message="p1:C4CGetDataModelDetailsResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetMCCCAccounts">
+			<wsdl:documentation/>
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_GetMCCCAccounts"/>
+			</wsp:Policy>
+			<wsdl:input message="p1:C4CGetMCCCAccountsRequest"/>
+			<wsdl:output message="p1:C4CGetMCCCAccountsResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="C4CCommonServices_OutBinding"
+	              type="p1:C4CCommonServices_Out">
+		<soap:binding style="document"
+		              transport="http://schemas.xmlsoap.org/soap/http"
+		              xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		<wsdl:operation name="GetRegisterDetails">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+			                xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			<wsdl:input>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetAccountDetails">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+			                xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			<wsdl:input>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetCCNEDetails">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+			                xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			<wsdl:input>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetContractDetails">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+			                xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			<wsdl:input>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetInstallationDetails">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+			                xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			<wsdl:input>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetDataModelDetails">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+			                xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			<wsdl:input>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetMCCCAccounts">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+			                xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			<wsdl:input>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"
+				           xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="C4CCommonServices_OutService">
+		<wsdl:port name="HTTP_Port"
+		           binding="p1:C4CCommonServices_OutBinding">
+			<soap:address location="http://e-dhq-dx3.sec.se.com.sa:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=C4CDEV&amp;receiverParty=&amp;receiverService=&amp;interface=C4CCommonServices_Out&amp;interfaceNamespace=http%3A%2F%2Fsec.se.com.sa%2FBilling%2FC4C"
+			              xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+		<wsdl:port name="HTTPS_Port"
+		           binding="p1:C4CCommonServices_OutBinding">
+			<soap:address location="https://e-dhq-dx3.sec.se.com.sa:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=C4CDEV&amp;receiverParty=&amp;receiverService=&amp;interface=C4CCommonServices_Out&amp;interfaceNamespace=http%3A%2F%2Fsec.se.com.sa%2FBilling%2FC4C"
+			              xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

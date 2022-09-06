@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><UXComponent xmlns="http://www.sap.com/a1s/cd/oberon/uxcomponent-1.0" xmlns:base="http://www.sap.com/a1s/cd/oberon/base-1.0" xmlns:uxc="http://www.sap.com/a1s/cd/oberon/uxcontroller-1.0" xmlns:uxv="http://www.sap.com/a1s/cd/oberon/uxview-1.0" xmlns:mashup="http://www.sap.com/a1s/cd/oberon/uxmashup-1.0" AuthorizationClassificationCode="ReuseComponent" componentType="embedded" id="0231f3b2-36c4-1edd-87c1-f336c7a0ddb9" name="YDTOSIDRY_MAIN/PM00017.MC"><base:PropertyBag id="0231f3b2-36c4-1edd-87c1-f616d980fdda"><base:Property id="0231f3b2-36c4-1edd-87c1-f616d9811dda" name="MashupIdXpraTimestamp" value="2022-08-17T09:33:07.055232Z"/></base:PropertyBag><uxc:Interface id="0231f3b2-36c4-1edd-87c1-f336c7a0fdb9"><uxc:RequiredAssemblies id="0231f3b2-36c4-1edd-87c1-f336c7a11db9"><uxc:Assembly id="0231f3b2-36c4-1edd-87c1-f336c7a13db9" value="../addins/sapLSUIMashupPanes.dll"/></uxc:RequiredAssemblies><uxc:InPorts id="0231f3b2-36c4-1edd-87c1-f336c7a15db9"><uxc:InPort id="0231f3b2-36c4-1edd-87c1-f336c7a17db9" name="ExtensionFieldsInPort"/></uxc:InPorts></uxc:Interface><uxc:Implementation id="0231f3b2-36c4-1edd-87c1-f336c7a19db9"><uxc:DataModel id="0231f3b2-36c4-1edd-87c1-f336c7a1bdb9" name="Root"><uxc:DataField id="0231f3b2-36c4-1edd-87c1-f336c7a1ddb9" name="$MashupResult" type="string"/></uxc:DataModel><uxc:EventHandlers/><uxc:Queries/><uxc:DefaultSets/><uxc:MashupModel id="0231f3b2-36c4-1edd-87c1-f336c7a1fdb9"><mashup:StableAnchor release="823" type="MashupModelAnchor" xrepPath="/SAP_BYD_UI_FLEX/STABLE_ANCHORS/MashupModelAnchor/0231f3b236c41edd85f92a66b5d8f96b.uianchor"><TargetFile xmlns="http://www.sap.com/a1s/cd/oberon/uimodelchange-1.0" xrepPath="/YDTOSIDRY_MAIN/SRC/Mashups/Pipes/PM00017.MC.uimashup"/></mashup:StableAnchor><mashup:Services id="0231f3b2-36c4-1edd-87c1-f336c7a21db9"/><mashup:Pipes id="0231f3b2-36c4-1edd-87c1-f336c7a23db9"><mashup:CustomPipe createdBy="K91JXP8GYQK" createdOn="2022-08-09T09:55:48Z" id="0231f3b2-36c4-1edd-87c1-f336c7a25db9" isActive="true" isManageable="true" isModifiable="true" isRemovable="true" lastChangedBy="K91JXP8GYQK" lastChangedOn="2022-08-10T12:07:58Z" mashupCategory="" mashupType="Html_Mashup" name="YDTOSIDRY_MAIN/PM00017" pipeType="CustomPipe" semanticCategory="BusinessFinance" serviceProvider="" sourcePlug="ExtensionFieldsInPort"><mashup:DisplayName id="0231f3b2-36c4-1edd-87c1-f336c7a27db9" textPoolId="displayName"/><mashup:Description id="0231f3b2-36c4-1edd-87c1-f336c7a29db9" textPoolId="description"/><mashup:Metadata id="0231f3b2-36c4-1edd-87c1-f4e2d8effdd8" name="gadgetSource" value="JTNDJTIxRE9DVFlQRSUyMGh0bWwlM0UlMEElM0NodG1sJTIwbGFuZyUzRCUyMmVuJTIyJTNFJTBBJTNDaGVhZCUzRSUwQSUyMCUyMCUyMCUyMCUzQ21ldGElMjBjaGFyc2V0JTNEJTIyVVRGLTglMjIlM0UlMEElMjAlMjAlMjAlMjAlM0NtZXRhJTIwaHR0cC1lcXVpdiUzRCUyMlgtVUEtQ29tcGF0aWJsZSUyMiUyMGNvbnRlbnQlM0QlMjJJRSUzRGVkZ2UlMjIlM0UlMEElMjAlMjAlMjAlMjAlM0NtZXRhJTIwbmFtZSUzRCUyMnZpZXdwb3J0JTIyJTIwY29udGVudCUzRCUyMndpZHRoJTNEZGV2aWNlLXdpZHRoJTJDJTIwaW5pdGlhbC1zY2FsZSUzRDEuMCUyMiUzRSUwQSUyMCUyMCUyMCUyMCUzQ3RpdGxlJTNFRG9jdW1lbnQlM0MlMkZ0aXRsZSUzRSUwQSUyMCUyMCUyMCUyMCUzQ2xpbmslMjBocmVmJTNEJTIyaHR0cHMlM0ElMkYlMkZjZG4uanNkZWxpdnIubmV0JTJGbnBtJTJGYm9vdHN0cmFwJTQwNS4xLjMlMkZkaXN0JTJGY3NzJTJGYm9vdHN0cmFwLm1pbi5jc3MlMjIlMjByZWwlM0QlMjJzdHlsZXNoZWV0JTIyJTIwaW50ZWdyaXR5JTNEJTIyc2hhMzg0LTFCbUU0a1dCcTc4aVloRmxkdkt1aGZUQVU2YXVVOHRUOTRXckhmdGpEYnJDRVhTVTFvQm9xeWwyUXZaNmpJVzMlMjIlMjBjcm9zc29yaWdpbiUzRCUyMmFub255bW91cyUyMiUzRSUwQSUzQyUyRmhlYWQlM0UlMEElM0Nib2R5JTNFJTBBJTIwJTIwJTIwJTNDZGl2JTIwY2xhc3MlM0QlMjJjb250YWluZXItZmx1aWQlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NkaXYlMjBjbGFzcyUzRCUyMnJvdyUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ2RpdiUyMGNsYXNzJTNEJTIyY29sLW1kLTglMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NkaXYlMjBjbGFzcyUzRCUyMmZyb20tZ3JvdXAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NpbnB1dCUyMHR5cGUlM0QlMjJ0ZXh0JTIyJTIwY2xhc3MlM0QlMjJmb3JtLWNvbnRyb2wlMjIlMjBpZCUzRCUyMnNlYXJjaFRleHRGaWVsZCUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQyUyRmRpdiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQyUyRmRpdiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQyUyRmRpdiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ2RpdiUyMGNsYXNzJTNEJTIycm93JTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDZGl2JTIwY2xhc3MlM0QlMjJjb2wtbWQtNCUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ2RpdiUyMGNsYXNzJTNEJTIyZnJvbS1ncm91cCUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ2xhYmVsJTNFQ291bnRyeSUyRlJlZ2lvbiUzQyUyRmxhYmVsJTNFJTIwJTNDaW5wdXQlMjB0eXBlJTNEJTIydGV4dCUyMiUyMGNsYXNzJTNEJTIyZm9ybS1jb250cm9sJTIyJTIwaWQlM0QlMjJjb3VudHJ5JTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGZGl2JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDZGl2JTIwY2xhc3MlM0QlMjJmcm9tLWdyb3VwJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDbGFiZWwlM0VTdHJlZXQlMjBhbmQlMjBIb3VzZSUyME51bWJlciUzQyUyRmxhYmVsJTNFJTIwJTNDaW5wdXQlMjB0eXBlJTNEJTIydGV4dCUyMiUyMGNsYXNzJTNEJTIyZm9ybS1jb250cm9sJTIyJTIwaWQlM0QlMjJhZGRyZXNzMiUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQyUyRmRpdiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ2RpdiUyMGNsYXNzJTNEJTIyZnJvbS1ncm91cCUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ2xhYmVsJTNFUG9zdGFsJTIwQ29kZSUzQyUyRmxhYmVsJTNFJTIwJTNDaW5wdXQlMjB0eXBlJTNEJTIydGV4dCUyMiUyMGNsYXNzJTNEJTIyZm9ybS1jb250cm9sJTIyJTIwaWQlM0QlMjJwb3N0Y29kZSUyMiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQyUyRmRpdiUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQyUyRmRpdiUzRSUwQSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQ2RpdiUyMGNsYXNzJTNEJTIyY29sLW1kLTQlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NkaXYlMjBjbGFzcyUzRCUyMmZyb20tZ3JvdXAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NsYWJlbCUzRUNpdHklM0MlMkZsYWJlbCUzRSUyMCUzQ2lucHV0JTIwdHlwZSUzRCUyMnRleHQlMjIlMjBjbGFzcyUzRCUyMmZvcm0tY29udHJvbCUyMiUyMGlkJTNEJTIybG9jYWxpdHklMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0MlMkZkaXYlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NkaXYlMjBjbGFzcyUzRCUyMmZyb20tZ3JvdXAlMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0NsYWJlbCUzRVN0YXRlJTNDJTJGbGFiZWwlM0UlMjAlM0NpbnB1dCUyMHR5cGUlM0QlMjJ0ZXh0JTIyJTIwY2xhc3MlM0QlMjJmb3JtLWNvbnRyb2wlMjIlMjBpZCUzRCUyMnN0YXRlJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGZGl2JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGZGl2JTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDJTJGZGl2JTNFJTBBJTIwJTIwJTIwJTNDJTJGZGl2JTNFJTBBJTIwJTIwJTIwJTNDc2NyaXB0JTNFJTBBJTIwJTIwJTIwJTIwZnVuY3Rpb24lMjBpbml0TWFwJTI4JTI5JTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwdmFyJTIwaW5wdXQlMjAlM0QlMjBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCUyOCUyN3NlYXJjaFRleHRGaWVsZCUyNyUyOSUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMHZhciUyMGF1dG9jb21wbGV0ZSUyMCUzRCUyMG5ldyUyMGdvb2dsZS5tYXBzLnBsYWNlcy5BdXRvY29tcGxldGUlMjhpbnB1dCUyOSUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMGF1dG9jb21wbGV0ZS5hZGRMaXN0ZW5lciUyOCUyN3BsYWNlX2NoYW5nZWQlMjclMkMlMjBmdW5jdGlvbiUyOCUyOSUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMHZhciUyMGF1dG9fcGxhY2UlMjAlM0QlMjBhdXRvY29tcGxldGUuZ2V0UGxhY2UlMjglMjklM0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMkYlMkZkb2N1bWVudC5nZXRFbGVtZW50QnlJZCUyOCUyMmFkZHJlc3MlMjIlMjkudmFsdWUlMjAlM0QlMjBKU09OLnN0cmluZ2lmeSUyOGF1dG9fcGxhY2UuYWRkcmVzc19jb21wb25lbnRzJTI5JTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwZmlsbEluQWRkcmVzcyUyOGF1dG9fcGxhY2UlMjklMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMEElMjAlMjAlMjAlMjAlMjAlMjAlN0QlMjklM0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMEElMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMEElMjAlMjAlMjAlMjAlMEElMjAlMjAlMjAlMjBmdW5jdGlvbiUyMGZpbGxJbkFkZHJlc3MlMjhwbGFjZSUyOSUyMCU3QiUwQSUyRiUyRiUyMEdldCUyMHRoZSUyMHBsYWNlJTIwZGV0YWlscyUyMGZyb20lMjB0aGUlMjBhdXRvY29tcGxldGUlMjBvYmplY3QuJTBBY29uc3QlMjBsb29wX3BsYWNlJTIwJTNEJTIwcGxhY2UlM0IlMEFsZXQlMjBhZGRyZXNzMSUyMCUzRCUyMCUyMiUyMiUzQiUwQWxldCUyMHBvc3Rjb2RlJTIwJTNEJTIwJTIyJTIyJTNCJTBBJTBBJTJGJTJGJTIwR2V0JTIwZWFjaCUyMGNvbXBvbmVudCUyMG9mJTIwdGhlJTIwYWRkcmVzcyUyMGZyb20lMjB0aGUlMjBwbGFjZSUyMGRldGFpbHMlMkMlMEElMkYlMkYlMjBhbmQlMjB0aGVuJTIwZmlsbC1pbiUyMHRoZSUyMGNvcnJlc3BvbmRpbmclMjBmaWVsZCUyMG9uJTIwdGhlJTIwZm9ybS4lMEElMkYlMkYlMjBwbGFjZS5hZGRyZXNzX2NvbXBvbmVudHMlMjBhcmUlMjBnb29nbGUubWFwcy5HZW9jb2RlckFkZHJlc3NDb21wb25lbnQlMjBvYmplY3RzJTBBJTJGJTJGJTIwd2hpY2glMjBhcmUlMjBkb2N1bWVudGVkJTIwYXQlMjBodHRwJTNBJTJGJTJGZ29vLmdsZSUyRjNsNWk1TXIlMEFmb3IlMjAlMjhjb25zdCUyMGNvbXBvbmVudCUyMG9mJTIwbG9vcF9wbGFjZS5hZGRyZXNzX2NvbXBvbmVudHMlMjklMjAlN0IlMEElMjAlMjAlMkYlMkYlMjAlNDB0cy1pZ25vcmUlMjByZW1vdmUlMjBvbmNlJTIwdHlwaW5ncyUyMGZpeGVkJTBBJTIwJTIwY29uc3QlMjBjb21wb25lbnRUeXBlJTIwJTNEJTIwY29tcG9uZW50LnR5cGVzJTVCMCU1RCUzQiUwQSUwQSUyMCUyMHN3aXRjaCUyMCUyOGNvbXBvbmVudFR5cGUlMjklMjAlN0IlMEElMjAlMjAlMjAlMjBjYXNlJTIwJTIyc3RyZWV0X251bWJlciUyMiUzQSUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMGFkZHJlc3MxJTIwJTNEJTIwJTYwJTI0JTdCY29tcG9uZW50LmxvbmdfbmFtZSU3RCUyMCUyNCU3QmFkZHJlc3MxJTdEJTYwJTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwYnJlYWslM0IlMEElMjAlMjAlMjAlMjAlN0QlMEElMEElMjAlMjAlMjAlMjBjYXNlJTIwJTIycm91dGUlMjIlM0ElMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjBhZGRyZXNzMSUyMCUyQiUzRCUyMGNvbXBvbmVudC5zaG9ydF9uYW1lJTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwYnJlYWslM0IlMEElMjAlMjAlMjAlMjAlN0QlMEElMEElMjAlMjAlMjAlMjBjYXNlJTIwJTIycG9zdGFsX2NvZGUlMjIlM0ElMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjBwb3N0Y29kZSUyMCUzRCUyMCU2MCUyNCU3QmNvbXBvbmVudC5sb25nX25hbWUlN0QlMjQlN0Jwb3N0Y29kZSU3RCU2MCUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMGJyZWFrJTNCJTBBJTIwJTIwJTIwJTIwJTdEJTBBJTBBJTIwJTIwJTIwJTIwY2FzZSUyMCUyMnBvc3RhbF9jb2RlX3N1ZmZpeCUyMiUzQSUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMHBvc3Rjb2RlJTIwJTNEJTIwJTYwJTI0JTdCcG9zdGNvZGUlN0QtJTI0JTdCY29tcG9uZW50LmxvbmdfbmFtZSU3RCU2MCUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMGJyZWFrJTNCJTBBJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwY2FzZSUyMCUyMmxvY2FsaXR5JTIyJTNBJTBBJTIwJTIwJTIwJTIwJTIwJTIwZG9jdW1lbnQucXVlcnlTZWxlY3RvciUyOCUyMiUyM2xvY2FsaXR5JTIyJTI5LnZhbHVlJTIwJTNEJTIwY29tcG9uZW50LmxvbmdfbmFtZSUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMGJyZWFrJTNCJTBBJTIwJTIwJTIwJTIwY2FzZSUyMCUyMmFkbWluaXN0cmF0aXZlX2FyZWFfbGV2ZWxfMSUyMiUzQSUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IlMjglMjIlMjNzdGF0ZSUyMiUyOS52YWx1ZSUyMCUzRCUyMGNvbXBvbmVudC5zaG9ydF9uYW1lJTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwYnJlYWslM0IlMEElMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjBjYXNlJTIwJTIyY291bnRyeSUyMiUzQSUwQSUyMCUyMCUyMCUyMCUyMCUyMGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IlMjglMjIlMjNjb3VudHJ5JTIyJTI5LnZhbHVlJTIwJTNEJTIwY29tcG9uZW50LmxvbmdfbmFtZSUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMGJyZWFrJTNCJTBBJTIwJTIwJTdEJTBBJTdEJTBBJTBBZG9jdW1lbnQucXVlcnlTZWxlY3RvciUyOCUyMiUyM2FkZHJlc3MyJTIyJTI5LnZhbHVlJTIwJTNEJTIwYWRkcmVzczElM0IlMEFkb2N1bWVudC5xdWVyeVNlbGVjdG9yJTI4JTIyJTIzcG9zdGNvZGUlMjIlMjkudmFsdWUlMjAlM0QlMjBwb3N0Y29kZSUzQiUwQSUyRiUyRiUyMEFmdGVyJTIwZmlsbGluZyUyMHRoZSUyMGZvcm0lMjB3aXRoJTIwYWRkcmVzcyUyMGNvbXBvbmVudHMlMjBmcm9tJTIwdGhlJTIwQXV0b2NvbXBsZXRlJTBBJTJGJTJGJTIwcHJlZGljdGlvbiUyQyUyMHNldCUyMGN1cnNvciUyMGZvY3VzJTIwb24lMjB0aGUlMjBzZWNvbmQlMjBhZGRyZXNzJTIwbGluZSUyMHRvJTIwZW5jb3VyYWdlJTBBJTJGJTJGJTIwZW50cnklMjBvZiUyMHN1YnByZW1pc2UlMjBpbmZvcm1hdGlvbiUyMHN1Y2glMjBhcyUyMGFwYXJ0bWVudCUyQyUyMHVuaXQlMkMlMjBvciUyMGZsb29yJTIwbnVtYmVyLiUwQSUyRiUyRmFkZHJlc3MyRmllbGQuZm9jdXMlMjglMjklM0IlMEElN0QlMEElMEElMkYlMkZ3aW5kb3cuaW5pdEF1dG9jb21wbGV0ZSUyMCUzRCUyMGluaXRBdXRvY29tcGxldGUlM0IlMEElMjAlMjAlMjAlMjAlMEElMjAlMjAlM0MlMkZzY3JpcHQlM0UlMEElMjAlMjAlMjAlMEElMjAlMjAlMjAlMjAlM0NzY3JpcHQlMjBzcmMlM0QlMjJodHRwcyUzQSUyRiUyRmNkbi5qc2RlbGl2ci5uZXQlMkZucG0lMkZib290c3RyYXAlNDA1LjEuMyUyRmRpc3QlMkZqcyUyRmJvb3RzdHJhcC5idW5kbGUubWluLmpzJTIyJTIwaW50ZWdyaXR5JTNEJTIyc2hhMzg0LWthN1NrMEdsbjRnbXR6Mk1sUW5pa1Qxd1hnWXNPZyUyQk9NaHVQJTJCSWxSSDlzRU5CTzBMUm41cSUyQjhuYlRvdjQlMkIxcCUyMiUyMGNyb3Nzb3JpZ2luJTNEJTIyYW5vbnltb3VzJTIyJTNFJTNDJTJGc2NyaXB0JTNFJTBBJTIwJTIwJTIwJTIwJTNDc2NyaXB0JTIwc3JjJTNEJTIyaHR0cHMlM0ElMkYlMkZtYXBzLmdvb2dsZWFwaXMuY29tJTJGbWFwcyUyRmFwaSUyRmpzJTNGa2V5JTNEQUl6YVN5QnJTX2ZqcWRhUk80UEtNQkg0SVRBNTRPa1l3dFpEU09VJTI2bGlicmFyaWVzJTNEcGxhY2VzJTI2Y2FsbGJhY2slM0Rpbml0TWFwJTIyJTIwYXN5bmMlMjBkZWZlciUzRSUzQyUyRnNjcmlwdCUzRSUwQSUzQyUyRmJvZHklM0UlMEElM0MlMkZodG1sJTNF"/><mashup:Metadata id="0231f3b2-36c4-1edd-87c1-f4e2d8f01dd8" name="widgetType" value="Advanced"/><mashup:Code><mashup:Source>&lt;![CDATA[&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;div class=&quot;container-fluid&quot;&gt;
+       &lt;div class=&quot;row&quot;&gt;
+           &lt;div class=&quot;col-md-8&quot;&gt;
+            &lt;div class=&quot;from-group&quot;&gt;
+                 &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;searchTextField&quot;&gt;
+            &lt;/div&gt;
+           &lt;/div&gt;
+       &lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;from-group&quot;&gt;
+                    &lt;label&gt;Country/Region&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;country&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;from-group&quot;&gt;
+                    &lt;label&gt;Street and House Number&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;address2&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;from-group&quot;&gt;
+                    &lt;label&gt;Postal Code&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;postcode&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;from-group&quot;&gt;
+                    &lt;label&gt;City&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;locality&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;from-group&quot;&gt;
+                    &lt;label&gt;State&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;state&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;script&gt;
+    function initMap() {
+      var input = document.getElementById(&apos;searchTextField&apos;);
+      var autocomplete = new google.maps.places.Autocomplete(input);
+      autocomplete.addListener(&apos;place_changed&apos;, function() {
+        var auto_place = autocomplete.getPlace();
+        //document.getElementById(&quot;address&quot;).value = JSON.stringify(auto_place.address_components);
+        
+        fillInAddress(auto_place)
+        
+      });
+      
+    }
+    
+    
+    function fillInAddress(place) {
+// Get the place details from the autocomplete object.
+const loop_place = place;
+let address1 = &quot;&quot;;
+let postcode = &quot;&quot;;
+
+// Get each component of the address from the place details,
+// and then fill-in the corresponding field on the form.
+// place.address_components are google.maps.GeocoderAddressComponent objects
+// which are documented at http://goo.gle/3l5i5Mr
+for (const component of loop_place.address_components) {
+  // @ts-ignore remove once typings fixed
+  const componentType = component.types[0];
+
+  switch (componentType) {
+    case &quot;street_number&quot;: {
+      address1 = `${component.long_name} ${address1}`;
+      break;
+    }
+
+    case &quot;route&quot;: {
+      address1 += component.short_name;
+      break;
+    }
+
+    case &quot;postal_code&quot;: {
+      postcode = `${component.long_name}${postcode}`;
+      break;
+    }
+
+    case &quot;postal_code_suffix&quot;: {
+      postcode = `${postcode}-${component.long_name}`;
+      break;
+    }
+    case &quot;locality&quot;:
+      document.querySelector(&quot;#locality&quot;).value = component.long_name;
+      break;
+    case &quot;administrative_area_level_1&quot;: {
+      document.querySelector(&quot;#state&quot;).value = component.short_name;
+      break;
+    }
+    case &quot;country&quot;:
+      document.querySelector(&quot;#country&quot;).value = component.long_name;
+      break;
+  }
+}
+
+document.querySelector(&quot;#address2&quot;).value = address1;
+document.querySelector(&quot;#postcode&quot;).value = postcode;
+// After filling the form with address components from the Autocomplete
+// prediction, set cursor focus on the second address line to encourage
+// entry of subpremise information such as apartment, unit, or floor number.
+//address2Field.focus();
+}
+
+//window.initAutocomplete = initAutocomplete;
+    
+  &lt;/script&gt;
+   
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=AIzaSyBrS_fjqdaRO4PKMBH4ITA54OkYwtZDSOU&amp;libraries=places&amp;callback=initMap&quot; async defer&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;]]&gt;</mashup:Source></mashup:Code></mashup:CustomPipe></mashup:Pipes><mashup:Views id="0231f3b2-36c4-1edd-87c1-f336c7a2fdb9" refreshOnInPortFired="true" refreshOnViewLoaded="true" style="inScreen"/></uxc:MashupModel><uxc:ModelChanges/><uxc:FieldTransformations/><uxc:ControllerImplementationPoints/><uxc:VirtualAssociations/></uxc:Implementation><Tags/><UXView id="0231f3b2-36c4-1edd-87c1-f336c7a31db9" patternType="embedded"><uxv:ViewContainerRegion id="0231f3b2-36c4-1edd-87c1-f336c7a33db9"><uxv:View columns="1" id="0231f3b2-36c4-1edd-87c1-f336c7a35db9" rows="1" transparent="true"><uxv:PaneContainer id="0231f3b2-36c4-1edd-87c1-f336c7a37db9"><uxv:CustomPane assemblyName="../addins/sapLSUIMashupPanes.dll" bodyStyle="Transparent" fixedHeight="200" id="0231f3b2-36c4-1edd-87c1-f336c7a39db9" jsTypeName="sap.client.controls.core.MashupHTMLContainer" typeName="SAP.BYD.LS.UI.Mashup.Panes.CustomPanes.CustomJavascriptMashupPane"/></uxv:PaneContainer></uxv:View></uxv:ViewContainerRegion></UXView><TextPool><base:TextBlock currentLanguage="true" language="EN" masterLanguage="true"><base:TextPoolEntry id="0231f3b2-36c4-1edd-87c1-f336c7a3bdb9" text="Quddus - Demo" textCategory="XTIT" textUuid="displayName"/><base:TextPoolEntry id="0231f3b2-36c4-1edd-87c1-f336c7a3ddb9" textCategory="YDES" textUuid="description"/></base:TextBlock></TextPool><Messages/><MessageMappings/></UXComponent>

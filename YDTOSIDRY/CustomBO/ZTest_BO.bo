@@ -1,0 +1,13 @@
+﻿import AP.Common.GDT as apCommonGDT;
+import AP.PDI.bo;
+import AP.FO.BusinessPartner.Global;
+businessobject ZTest_BO {
+
+element ZID:ID;
+element ZCustID:BusinessPartnerInternalID;
+element ZData:String;
+element ZDef:String;
+association cust to Customer;
+action test;
+
+}

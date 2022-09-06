@@ -1,0 +1,33 @@
+﻿/*
+	Add your SAP Business ByDesign scripting language implementation for:
+		Business Object: CustomerQuote
+		Node: Root
+		Action: Fileupload_C 
+		
+	Note: 
+	  - To access the elements of the business object node, 
+	    use path expressions, for example, this.<element name>. 
+	  - To use code completion, press CTRL+J. 
+	  - This script file is mass-enabled, i.e. the keyword "this" 
+	    refers to a collection of node instances.
+	   
+*/
+
+import ABSL;
+var getFirst = this.GetFirst();
+var ScenarioName = "ZCPI_EWI_CS";
+var ServiceName = "ZCPI_EWI";
+var HttpMethod = "POST";
+var HttpResource = ""; // not required for this example
+var ContentType = ""; // not required for this example
+var Body = "<Root><ObjectID>" + getFirst.NodeID + "</ObjectID><Binary>" + getFirst.ZBinary_C + "</Binary></Root>";
+
+
+var HeaderParameter : collectionof NameAndValue;  // not required for this example
+// Set URL Parameter
+var URLParameter : collectionof NameAndValue;
+var URLParameterEntry : NameAndValue;
+// Execute webservice call
+var ws_result = WebServiceUtilities.ExecuteRESTServiceWithoutEncoding(ScenarioName, ServiceName, HttpMethod, HttpResource, URLParameter, HeaderParameter, ContentType, Body);
+
+getFirst.ZBinary_C.Clear();
