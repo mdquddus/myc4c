@@ -31,5 +31,5 @@ foreach (var res in this)
 		res.cust = resultData;
 	}
 
-	var appele = "I am commiting the code in my folder One more James is back";
+	var appele = "I am commiting the code in my folder One more James is back.";
 }
